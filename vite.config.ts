@@ -1,7 +1,18 @@
-import tailwindcss from '@tailwindcss/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-	plugins: [tailwindcss(), sveltekit()]
+	plugins: [sveltekit()],
+	build: {
+		rollupOptions: {
+			output: {
+				manualChunks: {
+					vendor: ['svelte']
+				}
+			}
+		}
+	},
+	optimizeDeps: {
+		include: []
+	}
 });

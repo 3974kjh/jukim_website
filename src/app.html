@@ -1,12 +1,33 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko" %sveltekit.theme%>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="JuKim의 개인 포트폴리오 웹사이트 - 개발 여정과 프로젝트들을 마인드맵 형태로 탐험해보세요" />
+		<meta name="keywords" content="개발자, 포트폴리오, 프론트엔드, 백엔드, 웹개발, Svelte" />
+		<meta name="author" content="JuKim" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="JuKim Portfolio" />
+		<meta property="og:description" content="개발 여정과 프로젝트들을 마인드맵 형태로 탐험해보세요" />
+		
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:title" content="JuKim Portfolio" />
+		<meta property="twitter:description" content="개발 여정과 프로젝트들을 마인드맵 형태로 탐험해보세요" />
+		
+		<!-- Favicon -->
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+		
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover">
+	<body data-sveltekit-preload-data="hover" class="theme-auto">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
