@@ -61,7 +61,7 @@
   
   const IconHeart = `<path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>`;
   
-  // 마인드맵 데이터 (크기와 위치 증가)
+  // 마인드맵 데이터 (크기와 위치 대폭 확장)
   const mindMapData: MindMapState = {
     centerNode: {
       id: 'center',
@@ -81,13 +81,13 @@
         title: '나의 소개 및 일대기',
         description: '개인정보, 학력, 경력',
         level: 1,
-        position: { x: -400, y: -280 },
+        position: { x: -520, y: -380 },
         angle: Math.PI * 1.25,
-        radius: 480,
+        radius: 640,
         color: '#FF6B6B',
         category: 'introduction',
         route: '/introduction',
-        icon: IconProfile, // 프로필 아이콘으로 변경
+        icon: IconProfile,
         isVisible: true,
         isSelected: false,
         isHovered: false,
@@ -97,9 +97,9 @@
             id: 'personal-info', 
             title: '개인정보', 
             level: 2, 
-            position: { x: -600, y: -380 },
+            position: { x: -750, y: -520 },
             angle: Math.PI * 1.3,
-            radius: 700,
+            radius: 900,
             color: '#FF6B6B',
             isVisible: false,
             isSelected: false,
@@ -110,9 +110,9 @@
             id: 'education', 
             title: '학력', 
             level: 2, 
-            position: { x: -550, y: -200 },
+            position: { x: -680, y: -280 },
             angle: Math.PI * 1.2,
-            radius: 650,
+            radius: 820,
             color: '#FF6B6B',
             isVisible: false,
             isSelected: false,
@@ -123,9 +123,9 @@
             id: 'career', 
             title: '경력', 
             level: 2, 
-            position: { x: -480, y: -450 },
+            position: { x: -620, y: -580 },
             angle: Math.PI * 1.35,
-            radius: 680,
+            radius: 860,
             color: '#FF6B6B',
             isVisible: false,
             isSelected: false,
@@ -139,13 +139,13 @@
         title: '개발 여정',
         description: '언어, 기술스택, 학습과정',
         level: 1,
-        position: { x: 400, y: -280 },
+        position: { x: 520, y: -380 },
         angle: Math.PI * 0.25,
-        radius: 480,
+        radius: 640,
         color: '#4ECDC4',
         category: 'development',
         route: '/development',
-        icon: IconCode, // 코드 아이콘으로 변경
+        icon: IconCode,
         isVisible: true,
         isSelected: false,
         isHovered: false,
@@ -155,9 +155,9 @@
             id: 'languages', 
             title: '언어별 경험', 
             level: 2, 
-            position: { x: 600, y: -380 },
+            position: { x: 750, y: -520 },
             angle: Math.PI * 0.2,
-            radius: 700,
+            radius: 900,
             color: '#4ECDC4',
             isVisible: false,
             isSelected: false,
@@ -168,9 +168,9 @@
             id: 'tech-stack', 
             title: '기술 스택', 
             level: 2, 
-            position: { x: 550, y: -200 },
+            position: { x: 680, y: -280 },
             angle: Math.PI * 0.3,
-            radius: 650,
+            radius: 820,
             color: '#4ECDC4',
             isVisible: false,
             isSelected: false,
@@ -181,9 +181,9 @@
             id: 'learning', 
             title: '학습 과정', 
             level: 2, 
-            position: { x: 480, y: -450 },
+            position: { x: 620, y: -580 },
             angle: Math.PI * 0.15,
-            radius: 680,
+            radius: 860,
             color: '#4ECDC4',
             isVisible: false,
             isSelected: false,
@@ -197,13 +197,13 @@
         title: '개인프로젝트',
         description: '웹, 모바일, 기타 프로젝트',
         level: 1,
-        position: { x: -400, y: 280 },
+        position: { x: -520, y: 380 },
         angle: Math.PI * 0.75,
-        radius: 480,
+        radius: 640,
         color: '#A8E6CF',
         category: 'personal-projects',
         route: '/personal-projects',
-        icon: IconLightbulb, // 전구 아이콘으로 변경
+        icon: IconLightbulb,
         isVisible: true,
         isSelected: false,
         isHovered: false,
@@ -213,9 +213,9 @@
             id: 'web-projects', 
             title: '웹 프로젝트', 
             level: 2, 
-            position: { x: -600, y: 200 },
+            position: { x: -750, y: 280 },
             angle: Math.PI * 0.8,
-            radius: 700,
+            radius: 900,
             color: '#A8E6CF',
             isVisible: false,
             isSelected: false,
@@ -226,9 +226,9 @@
             id: 'mobile-apps', 
             title: '모바일 앱', 
             level: 2, 
-            position: { x: -550, y: 380 },
+            position: { x: -680, y: 520 },
             angle: Math.PI * 0.7,
-            radius: 650,
+            radius: 820,
             color: '#A8E6CF',
             isVisible: false,
             isSelected: false,
@@ -239,9 +239,9 @@
             id: 'other-projects', 
             title: '기타 프로젝트', 
             level: 2, 
-            position: { x: -480, y: 450 },
+            position: { x: -620, y: 580 },
             angle: Math.PI * 0.85,
-            radius: 680,
+            radius: 860,
             color: '#A8E6CF',
             isVisible: false,
             isSelected: false,
@@ -255,13 +255,13 @@
         title: '회사프로젝트',
         description: '현재/이전 회사, 주요 성과',
         level: 1,
-        position: { x: 400, y: 280 },
+        position: { x: 520, y: 380 },
         angle: Math.PI * 1.75,
-        radius: 480,
+        radius: 640,
         color: '#FFB6C1',
         category: 'company-projects',
         route: '/company-projects',
-        icon: IconWorkspace, // 작업공간 아이콘으로 변경
+        icon: IconWorkspace,
         isVisible: true,
         isSelected: false,
         isHovered: false,
@@ -271,9 +271,9 @@
             id: 'current-company', 
             title: '현재 회사', 
             level: 2, 
-            position: { x: 600, y: 200 },
+            position: { x: 750, y: 280 },
             angle: Math.PI * 1.8,
-            radius: 700,
+            radius: 900,
             color: '#FFB6C1',
             isVisible: false,
             isSelected: false,
@@ -284,9 +284,9 @@
             id: 'previous-companies', 
             title: '이전 회사', 
             level: 2, 
-            position: { x: 550, y: 380 },
+            position: { x: 680, y: 520 },
             angle: Math.PI * 1.7,
-            radius: 650,
+            radius: 820,
             color: '#FFB6C1',
             isVisible: false,
             isSelected: false,
@@ -297,9 +297,9 @@
             id: 'achievements', 
             title: '주요 성과', 
             level: 2, 
-            position: { x: 480, y: 450 },
+            position: { x: 620, y: 580 },
             angle: Math.PI * 1.85,
-            radius: 680,
+            radius: 860,
             color: '#FFB6C1',
             isVisible: false,
             isSelected: false,
@@ -313,13 +313,13 @@
         title: '취미',
         description: '관심사, 스포츠, 경험',
         level: 1,
-        position: { x: 0, y: -450 },
+        position: { x: 0, y: -580 },
         angle: Math.PI * 1.5,
-        radius: 450,
+        radius: 580,
         color: '#DDA0DD',
         category: 'hobbies',
         route: '/hobbies',
-        icon: IconHeart, // 하트 아이콘으로 변경
+        icon: IconHeart,
         isVisible: true,
         isSelected: false,
         isHovered: false,
@@ -329,9 +329,9 @@
             id: 'interests', 
             title: '개발 외 관심사', 
             level: 2, 
-            position: { x: -140, y: -600 },
+            position: { x: -180, y: -780 },
             angle: Math.PI * 1.45,
-            radius: 650,
+            radius: 820,
             color: '#DDA0DD',
             isVisible: false,
             isSelected: false,
@@ -342,9 +342,9 @@
             id: 'sports', 
             title: '스포츠/활동', 
             level: 2, 
-            position: { x: 0, y: -650 },
+            position: { x: 0, y: -850 },
             angle: Math.PI * 1.5,
-            radius: 700,
+            radius: 900,
             color: '#DDA0DD',
             isVisible: false,
             isSelected: false,
@@ -355,9 +355,9 @@
             id: 'travel', 
             title: '여행/경험', 
             level: 2, 
-            position: { x: 140, y: -600 },
+            position: { x: 180, y: -780 },
             angle: Math.PI * 1.55,
-            radius: 650,
+            radius: 820,
             color: '#DDA0DD',
             isVisible: false,
             isSelected: false,
@@ -371,13 +371,13 @@
         title: '잡소리',
         description: '개발철학, 생각정리, 기타',
         level: 1,
-        position: { x: 0, y: 450 },
+        position: { x: 0, y: 580 },
         angle: Math.PI * 0.5,
-        radius: 450,
+        radius: 580,
         color: '#87CEEB',
         category: 'thoughts',
         route: '/thoughts',
-        icon: IconBrain, // 뇌 아이콘으로 변경
+        icon: IconBrain,
         isVisible: true,
         isSelected: false,
         isHovered: false,
@@ -387,9 +387,9 @@
             id: 'philosophy', 
             title: '개발 철학', 
             level: 2, 
-            position: { x: -140, y: 600 },
+            position: { x: -180, y: 780 },
             angle: Math.PI * 0.55,
-            radius: 650,
+            radius: 820,
             color: '#87CEEB',
             isVisible: false,
             isSelected: false,
@@ -400,9 +400,9 @@
             id: 'reflections', 
             title: '생각 정리', 
             level: 2, 
-            position: { x: 0, y: 650 },
+            position: { x: 0, y: 850 },
             angle: Math.PI * 0.5,
-            radius: 700,
+            radius: 900,
             color: '#87CEEB',
             isVisible: false,
             isSelected: false,
@@ -413,9 +413,9 @@
             id: 'misc', 
             title: '기타 이야기', 
             level: 2, 
-            position: { x: 140, y: 600 },
+            position: { x: 180, y: 780 },
             angle: Math.PI * 0.45,
-            radius: 650,
+            radius: 820,
             color: '#87CEEB',
             isVisible: false,
             isSelected: false,
@@ -430,7 +430,7 @@
     selectedNodeId: null,
     hoveredNodeId: null,
     animationState: 'idle',
-    canvasSize: { width: 1600, height: 1600 },
+    canvasSize: { width: 2400, height: 2400 },
     zoom: 1,
     pan: { x: 0, y: 0 }
   };
@@ -582,21 +582,198 @@
   class:animating={isAnimating}
   bind:this={containerRef}
 >
-  <!-- 파티클 배경 -->
+  <!-- 우주 배경 효과들 -->
   <div class="particles-bg">
-    {#each Array(25) as _, i}
-      <div class="particle" style="
+    <!-- 반짝이는 별들 -->
+    {#each Array(100) as _, i}
+      <div class="star" style="
         left: {Math.random() * 100}%;
         top: {Math.random() * 100}%;
+        width: {1 + Math.random() * 3}px;
+        height: {1 + Math.random() * 3}px;
         animation-delay: {Math.random() * 5}s;
-        animation-duration: {3 + Math.random() * 4}s;
+        animation-duration: {2 + Math.random() * 4}s;
       "></div>
     {/each}
+    
+    <!-- 별똥별 효과 -->
+    {#each Array(8) as _, i}
+      <div class="meteor" style="
+        left: {Math.random() * 50}%;
+        top: {Math.random() * 50}%;
+        animation-delay: {0}s;
+        animation-duration: {2 + Math.random() * 3}s;
+      "></div>
+    {/each}
+    
+    <!-- 운석 효과 -->
+    {#each Array(12) as _, i}
+      <div class="asteroid" style="
+        left: {80 + Math.random() * 20}%;
+        top: {Math.random() * 30}%;
+        animation-delay: {0}s;
+        animation-duration: {4 + Math.random() * 6}s;
+      "></div>
+    {/each}
+    
+    <!-- 성운 효과 -->
+    {#each Array(6) as _, i}
+      <div class="nebula" style="
+        left: {10 + Math.random() * 80}%;
+        top: {10 + Math.random() * 80}%;
+        width: {150 + Math.random() * 200}px;
+        height: {150 + Math.random() * 200}px;
+        animation-delay: {0}s;
+        animation-duration: {15 + Math.random() * 10}s;
+        background: radial-gradient(circle, {['rgba(147, 51, 234, 0.1)', 'rgba(59, 130, 246, 0.1)', 'rgba(236, 72, 153, 0.1)', 'rgba(168, 85, 247, 0.1)', 'rgba(34, 197, 94, 0.1)', 'rgba(251, 146, 60, 0.1)'][Math.floor(Math.random() * 6)]} 0%, transparent 70%);
+      "></div>
+    {/each}
+    
+    <!-- 원거리 별 클러스터 -->
+    {#each Array(20) as _, i}
+      <div class="glow-orb" style="
+        left: {10 + Math.random() * 80}%;
+        top: {10 + Math.random() * 80}%;
+        width: {80 + Math.random() * 120}px;
+        height: {80 + Math.random() * 120}px;
+        animation-delay: {0}s;
+        animation-duration: {20 + Math.random() * 10}s;
+        background: radial-gradient(circle, {['rgba(255, 255, 255, 0.05)', 'rgba(79, 195, 247, 0.08)', 'rgba(255, 193, 7, 0.06)', 'rgba(156, 39, 176, 0.07)', 'rgba(244, 67, 54, 0.05)', 'rgba(76, 175, 80, 0.06)'][Math.floor(Math.random() * 6)]} 0%, transparent 70%);
+      "></div>
+    {/each}
+    
+    <!-- 우주왕복선들 -->
+    {#each Array(2) as _, i}
+      <div class="space-shuttle" style="
+        left: {20 + i * 60}%;
+        top: {30 + i * 40}%;
+        animation-delay: {0}s;
+        animation-duration: {45 + i * 15}s;
+      ">
+        <svg width="40" height="20" viewBox="0 0 40 20">
+          <!-- 셔틀 본체 -->
+          <ellipse cx="25" cy="10" rx="8" ry="3" fill="#E0E0E0"/>
+          <!-- 셔틀 날개 -->
+          <polygon points="17,7 10,5 10,15 17,13" fill="#B0B0B0"/>
+          <!-- 셔틀 꼬리 -->
+          <polygon points="10,8 3,6 3,14 10,12" fill="#909090"/>
+          <!-- 조종실 (앞쪽) -->
+          <ellipse cx="33" cy="10" rx="4" ry="2" fill="#4FC3F7" opacity="0.8"/>
+          <!-- 추진기 불꽃 (뒤쪽) -->
+          <ellipse cx="3" cy="10" rx="8" ry="2" fill="#FF6B35" opacity="0.7">
+            <animate attributeName="opacity" values="0.5;0.9;0.5" dur="0.5s" repeatCount="indefinite"/>
+            <animate attributeName="rx" values="6;10;6" dur="0.8s" repeatCount="indefinite"/>
+          </ellipse>
+          <!-- 추가 추진기 -->
+          <ellipse cx="1" cy="10" rx="4" ry="1" fill="#FFD700" opacity="0.8">
+            <animate attributeName="opacity" values="0.3;0.8;0.3" dur="0.3s" repeatCount="indefinite"/>
+          </ellipse>
+        </svg>
+      </div>
+    {/each}
+    
+    <!-- UFO들 -->
+    {#each Array(3) as _, i}
+      <div class="ufo" style="
+        left: {10 + i * 30}%;
+        top: {20 + i * 25}%;
+        animation-delay: {0}s;
+        animation-duration: {25 + i * 10}s;
+      ">
+        <svg width="35" height="15" viewBox="0 0 35 15">
+          <!-- UFO 돔 -->
+          <ellipse cx="17.5" cy="6" rx="8" ry="4" fill="rgba(200, 200, 255, 0.6)"/>
+          <!-- UFO 본체 -->
+          <ellipse cx="17.5" cy="9" rx="15" ry="4" fill="#C0C0C0"/>
+          <!-- 조명들 -->
+          <circle cx="8" cy="9" r="1.5" fill="#FF4081">
+            <animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="17.5" cy="9" r="1.5" fill="#4CAF50">
+            <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="27" cy="9" r="1.5" fill="#2196F3">
+            <animate attributeName="opacity" values="0.3;1;0.3" dur="0.8s" repeatCount="indefinite"/>
+          </circle>
+          <!-- 견인 빔 -->
+          <polygon points="12,13 23,13 20,25 15,25" fill="rgba(255, 255, 0, 0.3)" opacity="0.5">
+            <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2s" repeatCount="indefinite"/>
+          </polygon>
+        </svg>
+      </div>
+    {/each}
+    
+    <!-- 우주정거장 -->
+    <div class="space-station" style="
+      left: 75%;
+      top: 15%;
+      animation-duration: 120s;
+    ">
+      <svg width="60" height="40" viewBox="0 0 60 40">
+        <!-- 중앙 모듈 -->
+        <rect x="25" y="15" width="10" height="10" fill="#E0E0E0" rx="2"/>
+        <!-- 태양전지판 좌측 -->
+        <rect x="5" y="5" width="15" height="30" fill="#1E3A5F" opacity="0.8"/>
+        <g>
+          {#each Array(6) as _, i}
+            <rect x="6" y="{6 + i * 4.5}" width="13" height="3" fill="#4FC3F7" opacity="0.7"/>
+          {/each}
+        </g>
+        <!-- 태양전지판 우측 -->
+        <rect x="40" y="5" width="15" height="30" fill="#1E3A5F" opacity="0.8"/>
+        <g>
+          {#each Array(6) as _, i}
+            <rect x="41" y="{6 + i * 4.5}" width="13" height="3" fill="#4FC3F7" opacity="0.7"/>
+          {/each}
+        </g>
+        <!-- 안테나 -->
+        <line x1="30" y1="15" x2="30" y2="8" stroke="#C0C0C0" stroke-width="1"/>
+        <circle cx="30" cy="8" r="2" fill="#FF6B35"/>
+        <!-- 도킹 포트 -->
+        <circle cx="30" cy="25" r="3" fill="#90A4AE"/>
+        <!-- 조명 -->
+        <circle cx="25" cy="20" r="1" fill="#4CAF50">
+          <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="35" cy="20" r="1" fill="#F44336">
+          <animate attributeName="opacity" values="1;0.5;1" dur="2.5s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+    </div>
   </div>
 
-  <svg class="mindmap-canvas" viewBox="-800 -800 1600 1600" role="img" aria-label="Interactive mind map">
+  <svg class="mindmap-canvas" viewBox="-1200 -1000 2400 2000" role="img" aria-label="Interactive mind map">
     <!-- 그라디언트 정의 -->
     <defs>
+      <!-- 태양 그라디언트 -->
+      <radialGradient id="sun-gradient" cx="0.3" cy="0.3" r="0.8">
+        <stop offset="0%" stop-color="#FFF700" stop-opacity="1"/>
+        <stop offset="30%" stop-color="#FFAA00" stop-opacity="1"/>
+        <stop offset="70%" stop-color="#FF4500" stop-opacity="0.9"/>
+        <stop offset="100%" stop-color="#CC2200" stop-opacity="0.8"/>
+      </radialGradient>
+      
+      <!-- 태양 코로나 그라디언트 -->
+      <radialGradient id="corona-gradient-1" cx="0.5" cy="0.5" r="0.9">
+        <stop offset="0%" stop-color="#FFFF00" stop-opacity="0.8"/>
+        <stop offset="50%" stop-color="#FFA500" stop-opacity="0.6"/>
+        <stop offset="100%" stop-color="#FF4500" stop-opacity="0.3"/>
+      </radialGradient>
+      
+      <radialGradient id="corona-gradient-2" cx="0.5" cy="0.5" r="0.7">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+        <stop offset="50%" stop-color="#FFFF00" stop-opacity="0.7"/>
+        <stop offset="100%" stop-color="#FFA500" stop-opacity="0.4"/>
+      </radialGradient>
+      
+      <!-- 태양 플레어 그라디언트 -->
+      <linearGradient id="flare-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+        <stop offset="30%" stop-color="#FFFF00" stop-opacity="0.8"/>
+        <stop offset="70%" stop-color="#FFA500" stop-opacity="0.6"/>
+        <stop offset="100%" stop-color="#FF4500" stop-opacity="0.3"/>
+      </linearGradient>
+      
       <!-- 중심 노드 그라디언트 -->
       <radialGradient id="center-gradient" cx="0.5" cy="0.4" r="0.7">
         <stop offset="0%" stop-color="#FFD700" stop-opacity="1"/>
@@ -625,13 +802,71 @@
       </radialGradient>
       
       {#each mindMapData.mainBranches as branch (branch.id)}
-        <radialGradient id="gradient-{branch.id}" cx="0.5" cy="0.3" r="0.8">
-          <stop offset="0%" stop-color="{branch.gradient?.from || branch.color}" stop-opacity="1"/>
-          <stop offset="100%" stop-color="{branch.gradient?.to || branch.color}" stop-opacity="0.8"/>
-        </radialGradient>
+        <!-- 지구 그라디언트 (introduction) -->
+        {#if branch.id === 'introduction'}
+          <radialGradient id="gradient-{branch.id}" cx="0.3" cy="0.3" r="0.9">
+            <stop offset="0%" stop-color="#87CEEB" stop-opacity="1"/>
+            <stop offset="40%" stop-color="#4169E1" stop-opacity="1"/>
+            <stop offset="70%" stop-color="#228B22" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#006400" stop-opacity="0.8"/>
+          </radialGradient>
+          <radialGradient id="earth-atmosphere" cx="0.5" cy="0.5" r="1.1">
+            <stop offset="80%" stop-color="transparent" stop-opacity="0"/>
+            <stop offset="95%" stop-color="#87CEEB" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#ADD8E6" stop-opacity="0.6"/>
+          </radialGradient>
+        <!-- 화성 그라디언트 (development) -->
+        {:else if branch.id === 'development'}
+          <radialGradient id="gradient-{branch.id}" cx="0.4" cy="0.3" r="0.8">
+            <stop offset="0%" stop-color="#CD853F" stop-opacity="1"/>
+            <stop offset="30%" stop-color="#A0522D" stop-opacity="1"/>
+            <stop offset="70%" stop-color="#8B4513" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#800000" stop-opacity="0.8"/>
+          </radialGradient>
+        <!-- 목성 그라디언트 (personal-projects) -->
+        {:else if branch.id === 'personal-projects'}
+          <radialGradient id="gradient-{branch.id}" cx="0.5" cy="0.3" r="0.9">
+            <stop offset="0%" stop-color="#DEB887" stop-opacity="1"/>
+            <stop offset="25%" stop-color="#D2691E" stop-opacity="1"/>
+            <stop offset="50%" stop-color="#A0522D" stop-opacity="1"/>
+            <stop offset="75%" stop-color="#8B4513" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#654321" stop-opacity="0.8"/>
+          </radialGradient>
+        <!-- 토성 그라디언트 (company-projects) -->
+        {:else if branch.id === 'company-projects'}
+          <radialGradient id="gradient-{branch.id}" cx="0.3" cy="0.3" r="0.8">
+            <stop offset="0%" stop-color="#FFD700" stop-opacity="1"/>
+            <stop offset="40%" stop-color="#DAA520" stop-opacity="1"/>
+            <stop offset="70%" stop-color="#B8860B" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#8B7D6B" stop-opacity="0.8"/>
+          </radialGradient>
+          <linearGradient id="saturn-rings" x1="0%" y1="50%" x2="100%" y2="50%">
+            <stop offset="0%" stop-color="transparent" stop-opacity="0"/>
+            <stop offset="20%" stop-color="#C0C0C0" stop-opacity="0.8"/>
+            <stop offset="50%" stop-color="#808080" stop-opacity="1"/>
+            <stop offset="80%" stop-color="#C0C0C0" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+          </linearGradient>
+        <!-- 금성 그라디언트 (hobbies) -->
+        {:else if branch.id === 'hobbies'}
+          <radialGradient id="gradient-{branch.id}" cx="0.3" cy="0.3" r="0.8">
+            <stop offset="0%" stop-color="#FFFACD" stop-opacity="1"/>
+            <stop offset="30%" stop-color="#FFFF00" stop-opacity="1"/>
+            <stop offset="70%" stop-color="#FFD700" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#FFA500" stop-opacity="0.8"/>
+          </radialGradient>
+        <!-- 해왕성 그라디언트 (thoughts) -->
+        {:else if branch.id === 'thoughts'}
+          <radialGradient id="gradient-{branch.id}" cx="0.3" cy="0.3" r="0.9">
+            <stop offset="0%" stop-color="#E0FFFF" stop-opacity="1"/>
+            <stop offset="30%" stop-color="#00BFFF" stop-opacity="1"/>
+            <stop offset="70%" stop-color="#0000CD" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#191970" stop-opacity="0.8"/>
+          </radialGradient>
+        {/if}
         
         <filter id="glow-{branch.id}">
-          <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+          <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
           <feMerge> 
             <feMergeNode in="coloredBlur"/>
             <feMergeNode in="SourceGraphic"/>
@@ -639,8 +874,8 @@
         </filter>
       {/each}
       
-      <filter id="center-glow">
-        <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <filter id="sun-glow">
+        <feGaussianBlur stdDeviation="12" result="coloredBlur"/>
         <feMerge> 
           <feMergeNode in="coloredBlur"/>
           <feMergeNode in="SourceGraphic"/>
@@ -679,7 +914,7 @@
         <circle
           cx={mindMapData.centerNode.position.x}
           cy={mindMapData.centerNode.position.y}
-          r="160"
+          r="200"
           class="center-hover-area"
           fill="transparent"
           role="button"
@@ -691,104 +926,120 @@
           onmouseleave={() => handleCenterHover(false)}
         />
         
-        <!-- 장식적 외부 링 패턴 -->
-        <g class="decorative-border" transform="translate({mindMapData.centerNode.position.x}, {mindMapData.centerNode.position.y})">
-          <!-- 외부 장식 링 1 -->
+        <!-- 태양 코로나와 플레어 (태양계의 중심) -->
+        <g class="sun-corona" transform="translate({mindMapData.centerNode.position.x}, {mindMapData.centerNode.position.y})">
+          <!-- 외부 코로나 링들 -->
           <circle
             cx="0"
             cy="0"
-            r={130 + Math.sin(pulsePhase) * 8}
-            class="outer-ring-1"
+            r={180 + Math.sin(pulsePhase) * 15}
+            class="corona-ring-1"
             fill="none"
-            stroke="url(#ring-gradient-1)"
-            stroke-width="3"
-            stroke-dasharray="20,8,5,8"
-            opacity="0.6"
-            pointer-events="none"
-          />
-          
-          <!-- 외부 장식 링 2 -->
-          <circle
-            cx="0"
-            cy="0"
-            r={115 + Math.sin(pulsePhase * 1.3) * 6}
-            class="outer-ring-2"
-            fill="none"
-            stroke="url(#ring-gradient-2)"
-            stroke-width="2"
-            stroke-dasharray="15,10"
+            stroke="url(#corona-gradient-1)"
+            stroke-width="6"
+            stroke-dasharray="30,15,10,15"
             opacity="0.7"
             pointer-events="none"
           />
           
-          <!-- 기하학적 장식 요소들 -->
-          {#each Array(8) as _, i}
-            <g transform="rotate({i * 45})" pointer-events="none">
-              <!-- 다이아몬드 장식 -->
+          <circle
+            cx="0"
+            cy="0"
+            r={160 + Math.sin(pulsePhase * 1.3) * 12}
+            class="corona-ring-2"
+            fill="none"
+            stroke="url(#corona-gradient-2)"
+            stroke-width="4"
+            stroke-dasharray="25,20"
+            opacity="0.8"
+            pointer-events="none"
+          />
+          
+          <!-- 태양 플레어들 -->
+          {#each Array(16) as _, i}
+            <g transform="rotate({i * 22.5})" pointer-events="none">
+              <!-- 큰 플레어 -->
               <path
-                d="M 0,-140 L 8,-132 L 0,-124 L -8,-132 Z"
-                fill="url(#diamond-gradient)"
-                stroke="rgba(255, 255, 255, 0.8)"
-                stroke-width="1"
-                opacity="0.8"
-                class="diamond-decoration"
+                d="M 0,-190 Q 15,-170 0,-150 Q -15,-170 0,-190"
+                fill="url(#flare-gradient)"
+                stroke="rgba(255, 255, 0, 0.8)"
+                stroke-width="2"
+                opacity="0.6"
+                class="solar-flare large"
               />
               
-              <!-- 작은 원형 장식 -->
-              <circle
-                cx="0"
-                cy="-120"
-                r="3"
-                fill="rgba(255, 215, 0, 0.9)"
-                class="small-decoration"
+              <!-- 작은 플레어 -->
+              <path
+                d="M 0,-170 Q 8,-155 0,-140 Q -8,-155 0,-170"
+                fill="rgba(255, 255, 255, 0.4)"
+                opacity="0.5"
+                class="solar-flare small"
               >
-                <animate attributeName="opacity" values="0.6;1;0.6" dur="{2 + i * 0.2}s" repeatCount="indefinite"/>
-              </circle>
+                <animate attributeName="opacity" values="0.3;0.8;0.3" dur="{3 + i * 0.2}s" repeatCount="indefinite"/>
+              </path>
             </g>
           {/each}
           
-          <!-- 십자 장식 -->
-          {#each Array(4) as _, i}
-            <g transform="rotate({i * 90})" pointer-events="none">
-              <path
-                d="M 0,-110 L 3,-107 L 0,-104 L -3,-107 Z"
-                fill="rgba(255, 255, 255, 0.6)"
-                class="cross-decoration"
-              />
+          <!-- 태양 표면의 폭발 효과 -->
+          {#each Array(8) as _, i}
+            <g transform="rotate({i * 45})" pointer-events="none">
+              <circle
+                cx="0"
+                cy="-140"
+                r="6"
+                fill="rgba(255, 255, 255, 0.9)"
+                class="solar-explosion"
+              >
+                <animate attributeName="r" values="3;12;3" dur="{2 + i * 0.3}s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0.8;0.3;0.8" dur="{2 + i * 0.3}s" repeatCount="indefinite"/>
+              </circle>
             </g>
           {/each}
         </g>
         
-        <!-- 메인 중심 원 -->
+        <!-- 태양 본체 -->
         <circle
           cx={mindMapData.centerNode.position.x}
           cy={mindMapData.centerNode.position.y}
-          r={95 + Math.sin(pulsePhase * 1.5) * 5}
-          class="center-circle"
-          fill="url(#center-gradient)"
-          filter="url(#center-glow)"
+          r={130 + Math.sin(pulsePhase * 1.5) * 10}
+          class="sun-surface"
+          fill="url(#sun-gradient)"
+          filter="url(#sun-glow)"
           stroke="rgba(255, 255, 255, 0.9)"
-          stroke-width="4"
+          stroke-width="6"
           pointer-events="none"
         />
         
-        <!-- 내부 펄스 링 -->
+        <!-- 태양 내부 핵 -->
         <circle
           cx={mindMapData.centerNode.position.x}
           cy={mindMapData.centerNode.position.y}
-          r={75 + Math.sin(pulsePhase * 2) * 8}
-          class="inner-pulse"
+          r={100 + Math.sin(pulsePhase * 2) * 15}
+          class="sun-core"
           fill="none"
-          stroke="rgba(255, 255, 255, 0.4)"
+          stroke="rgba(255, 255, 255, 0.6)"
+          stroke-width="4"
+          opacity="0.9"
+          pointer-events="none"
+        />
+        
+        <!-- 태양 표면 활동 -->
+        <circle
+          cx={mindMapData.centerNode.position.x}
+          cy={mindMapData.centerNode.position.y}
+          r={80 + Math.sin(pulsePhase * 2.5) * 8}
+          class="sun-activity"
+          fill="none"
+          stroke="rgba(255, 255, 0, 0.8)"
           stroke-width="2"
-          opacity="0.8"
+          opacity="0.7"
           pointer-events="none"
         />
         
         <text
           x={mindMapData.centerNode.position.x}
           y={mindMapData.centerNode.position.y}
-          class="center-text"
+          class="sun-text"
           text-anchor="middle"
           dominant-baseline="central"
           pointer-events="none"
@@ -809,7 +1060,7 @@
           <circle
             cx={branch.position.x}
             cy={branch.position.y}
-            r="100"
+            r="130"
             class="hover-area"
             fill="transparent"
             role="button"
@@ -826,11 +1077,11 @@
             <circle
               cx={branch.position.x}
               cy={branch.position.y}
-              r={110 + Math.sin(pulsePhase * 2) * 15}
+              r={140 + Math.sin(pulsePhase * 2) * 20}
               class="pulse-ring"
               fill="none"
               stroke={branch.color}
-              stroke-width="3"
+              stroke-width="4"
               opacity="0.4"
             />
           {/if}
@@ -839,20 +1090,122 @@
           <circle
             cx={branch.position.x}
             cy={branch.position.y}
-            r={75 + (isNodeActive(branch.id) ? 15 : 0) + Math.sin(pulsePhase + index) * 4}
-            class="branch-circle"
+            r={95 + (isNodeActive(branch.id) ? 20 : 0) + Math.sin(pulsePhase + index) * 6}
+            class="branch-circle planet-{branch.id}"
             fill="url(#gradient-{branch.id})"
             filter="url(#glow-{branch.id})"
             pointer-events="none"
           />
           
+          <!-- 행성별 특수 효과 -->
+          {#if branch.id === 'introduction'}
+            <!-- 지구 대기층 -->
+            <circle
+              cx={branch.position.x}
+              cy={branch.position.y}
+              r={110 + (isNodeActive(branch.id) ? 25 : 0) + Math.sin(pulsePhase + index) * 7}
+              class="earth-atmosphere"
+              fill="url(#earth-atmosphere)"
+              opacity="0.6"
+              pointer-events="none"
+            />
+          {:else if branch.id === 'company-projects'}
+            <!-- 토성 고리 (3차원 입체) -->
+            <g class="saturn-rings-3d" pointer-events="none">
+              <!-- 뒤쪽 고리 (어둡게) -->
+              <ellipse
+                cx={branch.position.x}
+                cy={branch.position.y}
+                rx={160 + (isNodeActive(branch.id) ? 35 : 0)}
+                ry="12"
+                fill="none"
+                stroke="rgba(128, 128, 128, 0.3)"
+                stroke-width="6"
+                opacity="0.4"
+                transform="rotate(-15 {branch.position.x} {branch.position.y})"
+              />
+              <ellipse
+                cx={branch.position.x}
+                cy={branch.position.y}
+                rx={145 + (isNodeActive(branch.id) ? 32 : 0)}
+                ry="10"
+                fill="none"
+                stroke="rgba(96, 96, 96, 0.4)"
+                stroke-width="4"
+                opacity="0.5"
+                transform="rotate(-15 {branch.position.x} {branch.position.y})"
+              />
+              
+              <!-- 중간 고리 -->
+              <ellipse
+                cx={branch.position.x}
+                cy={branch.position.y}
+                rx={140 + (isNodeActive(branch.id) ? 30 : 0)}
+                ry="15"
+                fill="none"
+                stroke="url(#saturn-rings)"
+                stroke-width="8"
+                opacity="0.7"
+                transform="rotate(-10 {branch.position.x} {branch.position.y})"
+              />
+              <ellipse
+                cx={branch.position.x}
+                cy={branch.position.y}
+                rx={125 + (isNodeActive(branch.id) ? 25 : 0)}
+                ry="12"
+                fill="none"
+                stroke="rgba(160, 160, 160, 0.6)"
+                stroke-width="5"
+                opacity="0.6"
+                transform="rotate(-10 {branch.position.x} {branch.position.y})"
+              />
+              
+              <!-- 앞쪽 고리 (밝게) -->
+              <ellipse
+                cx={branch.position.x}
+                cy={branch.position.y}
+                rx={155 + (isNodeActive(branch.id) ? 35 : 0)}
+                ry="18"
+                fill="none"
+                stroke="rgba(220, 220, 220, 0.8)"
+                stroke-width="4"
+                opacity="0.8"
+                transform="rotate(-5 {branch.position.x} {branch.position.y})"
+              />
+              <ellipse
+                cx={branch.position.x}
+                cy={branch.position.y}
+                rx={135 + (isNodeActive(branch.id) ? 28 : 0)}
+                ry="14"
+                fill="none"
+                stroke="rgba(255, 255, 255, 0.9)"
+                stroke-width="3"
+                opacity="0.9"
+                transform="rotate(-5 {branch.position.x} {branch.position.y})"
+              />
+              
+              <!-- 고리 입자 효과 -->
+              {#each Array(12) as _, i}
+                <circle
+                  cx={branch.position.x + (120 + i * 8) * Math.cos(i * 0.52)}
+                  cy={branch.position.y + (120 + i * 8) * Math.sin(i * 0.52) * 0.3}
+                  r="1.5"
+                  fill="rgba(200, 200, 200, 0.6)"
+                  opacity="0.7"
+                >
+                  <animate attributeName="opacity" values="0.4;0.9;0.4" dur="{3 + i * 0.4}s" repeatCount="indefinite"/>
+                </circle>
+              {/each}
+            </g>
+          {/if}
+          
           <!-- SVG 아이콘 -->
           <g class="branch-icon-container" pointer-events="none">
             <svg
-              x={branch.position.x - 18}
-              y={branch.position.y - 18}
-              width="36"
-              height="36"
+              x={branch.position.x - 24}
+              y={branch.position.y - 24}
+              width="48"
+              height="48"
               viewBox="0 0 24 24"
               class="branch-icon"
             >
@@ -863,7 +1216,7 @@
           <!-- 제목 -->
           <text
             x={branch.position.x}
-            y={branch.position.y + 130}
+            y={branch.position.y + 160}
             class="branch-title"
             text-anchor="middle"
             dominant-baseline="central"
@@ -876,7 +1229,7 @@
           {#if branch.description}
             <text
               x={branch.position.x}
-              y={branch.position.y + 155}
+              y={branch.position.y + 185}
               class="branch-description"
               text-anchor="middle"
               dominant-baseline="central"
@@ -890,14 +1243,27 @@
         <!-- 서브 노드들 -->
         {#each branch.children || [] as subnode (subnode.id)}
           <g 
-            class="sub-node"
+            class="sub-node satellite"
             class:visible={isNodeActive(branch.id)}
           >
+            <!-- 위성 궤도 표시 -->
             <circle
               cx={subnode.position.x}
               cy={subnode.position.y}
-              r="45"
-              class="sub-circle"
+              r="70"
+              class="satellite-orbit"
+              fill="none"
+              stroke="rgba(255, 255, 255, 0.2)"
+              stroke-width="1"
+              stroke-dasharray="5,10"
+              opacity="0.5"
+            />
+            
+            <circle
+              cx={subnode.position.x}
+              cy={subnode.position.y}
+              r="55"
+              class="sub-circle satellite-body"
               fill={branch.color}
               opacity="0.8"
             />
@@ -928,8 +1294,9 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    /* 배경 애니메이션 제거 */
+    background: radial-gradient(ellipse at center, #1e3c72 0%, #0B1426 40%, #000000 100%);
+    background-size: 100% 100%;
+    /* 우주 배경으로 변경 */
   }
   
   .particles-bg {
@@ -944,11 +1311,93 @@
   
   .particle {
     position: absolute;
-    width: 4px;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.6);
     border-radius: 50%;
     animation: particleFloat linear infinite;
+  }
+  
+  /* 별똥별 효과 */
+  .meteor {
+    position: absolute;
+    width: 3px;
+    height: 15px;
+    background: linear-gradient(135deg, #fff 0%, #4FC3F7 50%, transparent 100%);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    animation: meteorFall linear infinite;
+    box-shadow: 0 0 8px #4FC3F7, 0 0 16px #4FC3F7;
+    transform: rotate(45deg);
+  }
+  
+  /* 운석 효과 */
+  .asteroid {
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    background: linear-gradient(150deg, #8D6E63 0%, #5D4037 50%, #3E2723 100%);
+    border-radius: 60% 40% 40% 60%;
+    animation: asteroidFall linear infinite;
+    box-shadow: 0 0 6px rgba(139, 69, 19, 0.8);
+    transform: rotate(30deg);
+  }
+  
+  @keyframes meteorFall {
+    0% {
+      transform: translateX(-100px) translateY(-100px) rotate(45deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100vw) translateY(100vh) rotate(45deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes asteroidFall {
+    0% {
+      transform: translateX(100px) translateY(-50px) rotate(30deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100px) translateY(100vh) rotate(30deg);
+      opacity: 0;
+    }
+  }
+  
+  /* 별 반짝임 */
+  .star {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    animation: starTwinkle infinite ease-in-out;
+  }
+  
+  .star::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 1px;
+    background: inherit;
+    transform: translate(-50%, -50%);
+  }
+  
+  .star::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background: inherit;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* 성운 효과 */
+  .nebula {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: nebulaGlow infinite ease-in-out alternate;
+    pointer-events: none;
   }
   
   @keyframes particleFloat {
@@ -965,6 +1414,69 @@
     100% {
       transform: translateY(-100px) scale(1);
       opacity: 0;
+    }
+  }
+  
+  @keyframes meteorFall {
+    0% {
+      transform: translateY(-100px) translateX(-100px) rotate(-45deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) translateX(100vh) rotate(-45deg);
+      opacity: 0;
+    }
+  }
+/*   
+  @keyframes asteroidFall {
+    0% {
+      transform: translateY(-50px) translateX(100px) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) translateX(-100px) rotate(360deg);
+      opacity: 0;
+    }
+  } */
+  
+  @keyframes starTwinkle {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+  
+  @keyframes nebulaGlow {
+    0% {
+      opacity: 0.05;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0.15;
+      transform: scale(1.1);
+    }
+  }
+  
+  .glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.2;
+    animation: glowOrbPulse 8s infinite ease-in-out;
+    pointer-events: none;
+  }
+  
+  @keyframes glowOrbPulse {
+    0%, 100% {
+      transform: scale(0.8);
+      opacity: 0.1;
+    }
+    50% {
+      transform: scale(1.3);
+      opacity: 0.3;
     }
   }
   
@@ -1003,23 +1515,25 @@
     outline: none !important;
   }
   
-  /* 연결선 스타일 */
+  /* 연결선 스타일 (궤도선) */
   .connection-line {
     fill: none;
-    stroke-opacity: 0.6;
+    stroke-opacity: 0.4;
     transition: all 0.2s ease-out;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
+    stroke-dasharray: 10,5;
   }
   
   .connection-line.active {
-    stroke-opacity: 1;
-    filter: drop-shadow(0 0 15px currentColor);
-    animation: connectionPulse 2s ease-in-out infinite;
+    stroke-opacity: 0.8;
+    filter: drop-shadow(0 0 12px currentColor);
+    animation: orbitFlow 3s ease-in-out infinite;
+    stroke-dasharray: 15,8;
   }
   
-  @keyframes connectionPulse {
-    0%, 100% { stroke-width: 8; }
-    50% { stroke-width: 10; }
+  @keyframes orbitFlow {
+    0%, 100% { stroke-width: 4; stroke-dashoffset: 0; }
+    50% { stroke-width: 6; stroke-dashoffset: 20; }
   }
   
   .sub-connection {
@@ -1027,14 +1541,20 @@
     stroke-opacity: 0;
     transition: all 0.25s ease-out;
     pointer-events: none;
+    stroke-dasharray: 5,8;
   }
   
   .sub-connection.visible {
-    stroke-opacity: 0.7;
+    stroke-opacity: 0.5;
     filter: drop-shadow(0 0 8px currentColor);
+    animation: satelliteOrbit 4s linear infinite;
   }
   
-  /* 중심 노드 - 장식적 원형 */
+  @keyframes satelliteOrbit {
+    from { stroke-dashoffset: 0; }
+    to { stroke-dashoffset: 26; }
+  }
+  
   .center-node {
     cursor: pointer;
     transition: all 0.25s ease-out;
@@ -1168,16 +1688,16 @@
   
   .center-text {
     fill: #ffffff;
-    font-size: 3.2rem;
+    font-size: 4rem;
     font-weight: bold;
     pointer-events: none;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
     transition: all 0.2s ease-out;
   }
   
   .center-node:hover .center-text {
-    font-size: 3.6rem;
-    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+    font-size: 4.5rem;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.9));
   }
   
   /* 브랜치 노드 */
@@ -1192,37 +1712,37 @@
   
   .branch-circle {
     transition: all 0.2s ease-out;
-    stroke: rgba(255, 255, 255, 0.3);
-    stroke-width: 4;
+    stroke: rgba(255, 255, 255, 0.4);
+    stroke-width: 3;
   }
   
   .branch-node:hover {
-    animation: nodeBounce 0.4s ease-out;
+    animation: orbitWobble 0.6s ease-out;
   }
   
-  @keyframes nodeBounce {
+  @keyframes orbitWobble {
     0% { transform: scale(1) rotate(0deg); }
     50% { transform: scale(1.08) rotate(2deg); }
     100% { transform: scale(1.05) rotate(0deg); }
   }
   
   .branch-node.active .branch-circle {
-    stroke: rgba(255, 255, 255, 0.8);
+    stroke: rgba(255, 255, 255, 0.9);
     stroke-width: 6;
-    filter: drop-shadow(0 0 30px currentColor);
+    filter: drop-shadow(0 0 25px currentColor);
   }
   
   .pulse-ring {
-    animation: pulseRingExpand 1.2s ease-out infinite;
+    animation: cosmicPulse 1.5s ease-out infinite;
   }
   
-  @keyframes pulseRingExpand {
+  @keyframes cosmicPulse {
     0% {
-      r: 75px;
+      r: 95px;
       opacity: 0.8;
     }
     100% {
-      r: 120px;
+      r: 180px;
       opacity: 0;
     }
   }
@@ -1230,12 +1750,12 @@
   .branch-icon {
     fill: #ffffff;
     transition: all 0.2s ease-out;
-    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
-    transform-origin: 18px 18px;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+    transform-origin: 24px 24px;
   }
   
   .branch-node:hover .branch-icon {
-    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.9));
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1));
   }
   
   .branch-icon-container {
@@ -1243,46 +1763,47 @@
   }
   
   .branch-node:hover .branch-icon-container {
-    animation: iconBounce 0.6s ease-out infinite;
+    animation: antiGravity 0.8s ease-out infinite;
   }
   
-  @keyframes iconBounce {
+  @keyframes antiGravity {
     0%, 100% { 
-      transform: translateY(0px); 
+      transform: translateY(0px) scale(1); 
     }
     50% { 
-      transform: translateY(-8px); 
+      transform: translateY(-10px) scale(1.05); 
     }
   }
   
   .branch-title {
     fill: #ffffff;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 600;
     pointer-events: none;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(255, 255, 255, 0.3);
     transition: all 0.2s ease-out;
   }
   
   .branch-node:hover .branch-title {
-    font-size: 1.4rem;
-    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+    font-size: 1.8rem;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.9));
   }
   
   .branch-description {
     fill: rgba(255, 255, 255, 0.8);
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     pointer-events: none;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
     opacity: 0;
     transition: all 0.2s ease-out;
   }
   
   .branch-node:hover .branch-description {
     opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7));
   }
   
-  /* 서브 노드 */
+  /* 서브 노드 (위성) */
   .sub-node {
     opacity: 0;
     transform: scale(0.5);
@@ -1296,17 +1817,18 @@
   }
   
   .sub-circle {
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
-    stroke: rgba(255, 255, 255, 0.4);
+    filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.4));
+    stroke: rgba(255, 255, 255, 0.6);
     stroke-width: 2;
+    transition: all 0.3s ease-out;
   }
   
   .sub-text {
     fill: #ffffff;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
     pointer-events: none;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9), 0 0 15px rgba(255, 255, 255, 0.4);
   }
   
   /* 툴팁 스타일 제거됨 */
@@ -1314,52 +1836,56 @@
   /* 반응형 */
   @media (max-width: 768px) {
     .branch-title {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
+    }
+    
+    .branch-node:hover .branch-title {
+      font-size: 1.5rem;
+    }
+    
+    .branch-description {
+      font-size: 0.95rem;
     }
     
     .branch-icon {
-      width: 28px;
-      height: 28px;
+      width: 40px;
+      height: 40px;
     }
     
-    .branch-icon-container {
-      /* 기본 스케일 제거 */
-    }
-    
-    .branch-node:hover .branch-icon-container {
-      animation: iconBounce 0.8s ease-in-out infinite;
-    }
-    
-    @keyframes iconBounce {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
+    .branch-icon-container svg {
+      width: 40px;
+      height: 40px;
     }
     
     .center-text {
-      font-size: 2.6rem;
+      font-size: 3.2rem;
+    }
+    
+    .center-node:hover .center-text {
+      font-size: 3.6rem;
     }
     
     .center-hover-area {
-      r: 140px;
+      r: 160px;
     }
     
     .outer-ring-1 {
+      r: 130px;
+      stroke-width: 3;
+    }
+    
+    .outer-ring-2 {
       r: 110px;
       stroke-width: 2;
     }
     
-    .outer-ring-2 {
-      r: 95px;
-      stroke-width: 1.5;
-    }
-    
     .center-circle {
-      r: 80px;
-      stroke-width: 3;
+      r: 100px;
+      stroke-width: 4;
     }
     
     .inner-pulse {
-      r: 60px;
+      r: 80px;
     }
     
     .diamond-decoration {
@@ -1367,7 +1893,23 @@
     }
     
     .small-decoration {
-      r: 2.5;
+      r: 3;
+    }
+    
+    .branch-circle {
+      r: 80px;
+    }
+    
+    .hover-area {
+      r: 110px;
+    }
+    
+    .sub-circle {
+      r: 45px;
+    }
+    
+    .sub-text {
+      font-size: 0.9rem;
     }
   }
   
@@ -1377,5 +1919,236 @@
       animation: none !important;
       transition: none !important;
     }
+  }
+  
+  /* 태양 스타일 */
+  .sun-text {
+    fill: #ffffff;
+    font-size: 4rem;
+    font-weight: bold;
+    pointer-events: none;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.9), 0 0 40px rgba(255, 140, 0, 0.7);
+    transition: all 0.2s ease-out;
+  }
+  
+  .center-node:hover .sun-text {
+    font-size: 4.5rem;
+    filter: drop-shadow(0 0 30px rgba(255, 255, 255, 1));
+  }
+  
+  .sun-surface {
+    transition: all 0.2s ease-out;
+  }
+  
+  .center-node:hover .sun-surface {
+    stroke-width: 8;
+    filter: drop-shadow(0 0 40px rgba(255, 215, 0, 1));
+  }
+  
+  .sun-corona {
+    transition: all 0.25s ease-out;
+  }
+  
+  .center-node:hover .sun-corona {
+    animation: solarFlare 8s linear infinite;
+  }
+  
+  @keyframes solarFlare {
+    0%, 100% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .corona-ring-1,
+  .corona-ring-2 {
+    transition: all 0.2s ease-out;
+  }
+  
+  .center-node:hover .corona-ring-1 {
+    opacity: 1;
+    stroke-width: 8;
+    animation: coronaPulse1 4s ease-in-out infinite;
+  }
+  
+  .center-node:hover .corona-ring-2 {
+    opacity: 1;
+    stroke-width: 6;
+    animation: coronaPulse2 3s ease-in-out infinite;
+  }
+  
+  @keyframes coronaPulse1 {
+    0%, 100% { stroke-dasharray: 30,15,10,15; }
+    50% { stroke-dasharray: 45,20,15,20; }
+  }
+  
+  @keyframes coronaPulse2 {
+    0%, 100% { stroke-dasharray: 25,20; }
+    50% { stroke-dasharray: 35,30; }
+  }
+  
+  .solar-flare {
+    transition: all 0.2s ease-out;
+  }
+  
+  .center-node:hover .solar-flare.large {
+    opacity: 0.9;
+    stroke-width: 3;
+  }
+  
+  .center-node:hover .solar-flare.small {
+    opacity: 0.8;
+  }
+  
+  /* 행성별 특수 효과 */
+  .earth-atmosphere {
+    transition: all 0.3s ease-out;
+  }
+  
+  .branch-node:hover .earth-atmosphere {
+    opacity: 0.9;
+    stroke: rgba(135, 206, 235, 0.6);
+    stroke-width: 2;
+  }
+  
+  .cloud-pattern {
+    animation: cloudDrift 15s ease-in-out infinite;
+  }
+  
+  @keyframes cloudDrift {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+  }
+  
+  .dust-storm {
+    animation: martianWind 8s ease-in-out infinite;
+  }
+  
+  @keyframes martianWind {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+  
+  .jupiter-bands {
+    transition: all 0.3s ease-out;
+  }
+  
+  .branch-node:hover .jupiter-bands {
+    opacity: 0.8;
+  }
+  
+  .great-red-spot {
+    filter: drop-shadow(0 0 8px rgba(178, 34, 34, 0.8));
+  }
+  
+  .saturn-rings {
+    transition: all 0.3s ease-out;
+  }
+  
+  .saturn-rings-3d {
+    transition: all 0.3s ease-out;
+  }
+  
+  .branch-node:hover .saturn-rings,
+  .branch-node:hover .saturn-rings-3d {
+    opacity: 1;
+  }
+  
+  /* 우주 객체들 애니메이션 */
+  .space-shuttle {
+    position: absolute;
+    z-index: 1;
+    animation: shuttleOrbit linear infinite;
+    opacity: 0.8;
+  }
+  
+  @keyframes shuttleOrbit {
+    0% {
+      transform: translateX(-50px) translateY(20px) rotate(0deg);
+    }
+    25% {
+      transform: translateX(30vw) translateY(-10px) rotate(15deg);
+    }
+    50% {
+      transform: translateX(70vw) translateY(25px) rotate(30deg);
+    }
+    75% {
+      transform: translateX(30vw) translateY(60px) rotate(-15deg);
+    }
+    100% {
+      transform: translateX(-50px) translateY(20px) rotate(0deg);
+    }
+  }
+  
+  .ufo {
+    position: absolute;
+    z-index: 1;
+    animation: ufoFlight ease-in-out infinite;
+    opacity: 0.9;
+  }
+  
+  @keyframes ufoFlight {
+    0%, 100% {
+      transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+    25% {
+      transform: translateX(30px) translateY(-15px) rotate(5deg);
+    }
+    50% {
+      transform: translateX(-10px) translateY(-25px) rotate(-3deg);
+    }
+    75% {
+      transform: translateX(25px) translateY(-10px) rotate(8deg);
+    }
+  }
+  
+  .space-station {
+    position: absolute;
+    z-index: 1;
+    animation: stationFloat linear infinite;
+    opacity: 0.85;
+  }
+  
+  @keyframes stationFloat {
+    0% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(180deg);
+    }
+    100% {
+      transform: translateY(0px) rotate(360deg);
+    }
+  }
+  
+  .venus-atmosphere {
+    animation: venusGlow 6s ease-in-out infinite;
+  }
+  
+  @keyframes venusGlow {
+    0%, 100% { opacity: 0.7; stroke-width: 3; }
+    50% { opacity: 1; stroke-width: 5; }
+  }
+  
+  .ice-crystals {
+    filter: drop-shadow(0 0 4px rgba(224, 255, 255, 0.8));
+  }
+  
+  /* 위성 스타일 */
+  .satellite-orbit {
+    transition: all 0.25s ease-out;
+    animation: orbitPulse 8s ease-in-out infinite;
+  }
+  
+  @keyframes orbitPulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.8; }
+  }
+  
+  .satellite-body {
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+    transition: all 0.25s ease-out;
+  }
+  
+  .sub-node.visible .satellite-body {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
   }
 </style> 
