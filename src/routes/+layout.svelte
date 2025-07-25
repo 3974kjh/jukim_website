@@ -9,8 +9,8 @@
   import { userPreferences, analytics } from '$lib/utils/storage';
   
   // Import the new Tailwind-based CSS
-  import '../app.css';
-  
+	import '../app.css';
+
   interface Props {
     children: Snippet;
   }
@@ -130,7 +130,7 @@
   <!-- 메인 콘텐츠 영역 -->
   <main class="ml-20 min-h-screen transition-all duration-300 ease-out">
     <div class="relative z-10">
-      {@render children()}
+{@render children()}
     </div>
   </main>
   
